@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+<h2>Articles</h2>
+{% for poll in polls %}
+<div>
+	<h2><a href="/poll/get/{{ polls.id}}">{{ polls.title}}</a></h2>
+
+	<p>{{polls.body}}</p>
+</div>
+{% endfor %}
+</body>
+</html>
